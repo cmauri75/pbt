@@ -17,7 +17,9 @@
         <java.version>11</java.version>
         <repackage.classifier/>
         <spring-native.version>0.11.1</spring-native.version>
+        <junit-quickcheck.version>1.0</junit-quickcheck.version>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -63,7 +65,7 @@
         </dependency>
 
         <!-- testing redis with test containers and junit 5 -->
-         <dependency>
+        <dependency>
             <groupId>org.testcontainers</groupId>
             <artifactId>junit-jupiter</artifactId>
             <version>1.16.2</version>
@@ -87,6 +89,15 @@
             <version>5.4.2</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- pbt -->
+        <dependency>
+            <groupId>net.jqwik</groupId>
+            <artifactId>jqwik</artifactId>
+            <version>1.6.2</version>
+            <scope>test</scope>
+        </dependency>
+
 
     </dependencies>
 
