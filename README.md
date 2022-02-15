@@ -1,5 +1,5 @@
 # pbt
-Property-Based Testing and test containers mock
+Property-Based Testing - test containers mock - lombok&Ereditante
 
 ![Test types](img/tests.png?raw=true "Test types")
 

@@ -3,6 +3,9 @@ package com.example.pbt;
 
 import net.jqwik.api.ForAll;
 import net.jqwik.api.Property;
+import net.jqwik.api.constraints.IntRange;
+import net.jqwik.api.constraints.Positive;
+import org.jetbrains.annotations.Range;
 import org.junit.jupiter.api.Assertions;
 
 public class StringPropertiesTest {
@@ -15,7 +18,7 @@ public class StringPropertiesTest {
 
     //Not true, in case of 0,N or N,1 it fails
     @Property
-    public void failTest(@ForAll int i1, @ForAll int i2) {
+    public void failTest(@ForAll @Positive int i1, @ForAll @IntRange(min = 2) int i2) {
         Assertions.assertNotEquals(i1*i2,i1);
     }
 }
