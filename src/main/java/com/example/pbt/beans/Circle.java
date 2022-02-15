@@ -2,8 +2,6 @@ package com.example.pbt.beans;
 
 import com.example.pbt.beans.support.Radius;
 import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -17,6 +15,6 @@ public class Circle extends Shape{
     }
 
     public String printAll(){
-        return " Radius: "+radius.printMe()+" Color: "+color.printMe();
+        return "Radius: "+radius.printMe()+" Color: "+color.printMe();
     }
 }

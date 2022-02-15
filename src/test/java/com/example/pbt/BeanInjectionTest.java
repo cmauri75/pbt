@@ -1,13 +1,10 @@
 package com.example.pbt;
 
 import com.example.pbt.beans.Circle;
-import com.example.pbt.beans.support.Color;
-import com.example.pbt.beans.support.Radius;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.testcontainers.junit.jupiter.Testcontainers;
 
 @SpringBootTest
 public class BeanInjectionTest {
@@ -18,8 +15,7 @@ public class BeanInjectionTest {
     @Test
     public void tetConstructor() {
         //Circle c = Circle.builder().radius(new Radius()).build();
-        System.err.println(circle.printAll());
-        Assertions.assertEquals(circle.printMe(),"It's me");
+        Assertions.assertEquals("Radius: SuperRADIUS! Color: Great color*",circle.printAll());
     }
 
 
