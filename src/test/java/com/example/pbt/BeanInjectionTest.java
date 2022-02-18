@@ -1,6 +1,6 @@
 package com.example.pbt;
 
-import com.example.pbt.beans.Circle;
+import com.example.pbt.ereditance.Circle;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

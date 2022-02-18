@@ -1,4 +1,4 @@
-package com.example.pbt.beans.support;
+package com.example.pbt.ereditance.support;
 
 import org.springframework.stereotype.Component;
 

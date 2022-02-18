@@ -1,7 +1,7 @@
 package com.example.pbt;
 
-import com.example.pbt.Redis.Cache;
-import com.example.pbt.Redis.RedisBackedCache;
+import com.example.pbt.redis.Cache;
+import com.example.pbt.redis.RedisBackedCache;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

@@ -1,6 +1,6 @@
-package com.example.pbt.beans;
+package com.example.pbt.ereditance;
 
-import com.example.pbt.beans.support.Color;
+import com.example.pbt.ereditance.support.Color;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;

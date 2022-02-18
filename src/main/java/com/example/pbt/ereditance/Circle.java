@@ -1,6 +1,6 @@
-package com.example.pbt.beans;
+package com.example.pbt.ereditance;
 
-import com.example.pbt.beans.support.Radius;
+import com.example.pbt.ereditance.support.Radius;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
