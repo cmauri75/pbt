@@ -1,5 +1,5 @@
 # pbt
-Property-Based Testing - test containers mock - lombok&Ereditante
+Property-Based Testing - test containers mock - lombok&Ereditance - System.Logger
 
 ![Test types](img/tests.png?raw=true "Test types")
 
@@ -13,7 +13,6 @@ ex:
 for all (int x, int y)
 such that (add(x, y) equals add(y, x)) is satisfied
 ```
-
 Documentation of library: [jqwik](https://jqwik.net/docs/current/user-guide.html#how-to-use)
 
 Documentaition for test containers: [Sprint test containers](https://www.testcontainers.org/)
@@ -21,9 +20,8 @@ Documentaition for test containers: [Sprint test containers](https://www.testcon
 Docker should be installed for test containers
 
 ## Code
-
 * RedisBackedCacheIntTest.java contains a test against a redis server, loaded by docker at test-time
+* Logger: example usage of System.LOGGER, can be used as is, if falls over found log system (like slf4j) or create your own logger, like in this example. Just add META-INF/services/ file indicating finder implementation
 
 ## Usage
-
 just run ```./mvnw test```
