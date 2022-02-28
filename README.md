@@ -1,5 +1,5 @@
 # pbt
-Property-Based Testing - test containers mock - lombok&Ereditance - System.Logger
+Property-Based Testing - test containers mock - lombok&Ereditance - System.Logger - ehcache4Search
 
 ![Test types](img/tests.png?raw=true "Test types")
 
@@ -22,6 +22,6 @@ Docker should be installed for test containers
 ## Code
 * RedisBackedCacheIntTest.java contains a test against a redis server, loaded by docker at test-time
 * Logger: example usage of System.LOGGER, can be used as is, if falls over found log system (like slf4j) or create your own logger, like in this example. Just add META-INF/services/ file indicating finder implementation
-
+* ehcache: example usage of ehcache as fast-inmemory full text replacement
 ## Usage
 just run ```./mvnw test```

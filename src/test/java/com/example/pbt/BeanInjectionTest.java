@@ -13,7 +13,7 @@ public class BeanInjectionTest {
     Circle circle;
 
     @Test
-    public void tetConstructor() {
+    public void testConstructor() {
         //Circle c = Circle.builder().radius(new Radius()).build();
         Assertions.assertEquals("Radius: SuperRADIUS! Color: Great color*",circle.printAll());
     }
