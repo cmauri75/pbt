@@ -154,13 +154,23 @@
                 <artifactId>pitest-maven</artifactId>
                 <version>${pitest.version}</version>
                 <configuration>
+                    <mutators>
+                        <mutator>ALL</mutator>
+                    </mutators>
                     <targetClasses>
-                        <param>com.example.pbt*</param>
+                        <param>com.example.pbt.pit.*</param>
                     </targetClasses>
                     <targetTests>
-                        <param>com.example.pit*</param>
+                        <param>com.example.pbt.pit.*</param>
                     </targetTests>
                 </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.pitest</groupId>
+                        <artifactId>pitest-junit5-plugin</artifactId>
+                        <version>0.15</version>
+                    </dependency>
+                </dependencies>
             </plugin>
         </plugins>
     </build>
