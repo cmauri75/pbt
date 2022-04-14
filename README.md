@@ -1,5 +1,12 @@
-# pbt
-Property-Based Testing - test containers mock - lombok&Ereditance - System.Logger - ehcache4Search
+# PBT: exPerimental Big ideas for Java code developmenT
+
+## Topics covered
+* Property-Based Testing (Thanks to GG and Tinvention)
+* Test containers mock (Thanks the Web) 
+* Lombok&Ereditance (Original idea to solve UC style problem) 
+* System.Logger (Thanks to Baeldung)
+* ehcache4Search (Original idea to solve UC crypt performance problem)
+* PIT testing (Thanks to Decathlon IT)
 
 ![Test types](img/tests.png?raw=true "Test types")
 
