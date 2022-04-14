@@ -12,6 +12,7 @@ import net.sf.ehcache.search.Query;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -43,6 +44,14 @@ public class EHCacheManager {
         companyCache.put(new Element(key, text));
     }
 
+    public void removeValue(Integer... key) {
+        Arrays.stream(key).forEach(i -> this.saveValue(i, null));
+    }
+
+    public void clear() {
+        companyCache.removeAll();
+    }
+
     public String getText(int key) {
         return (String) companyCache.get(key).getObjectValue();
     }
@@ -53,5 +62,6 @@ public class EHCacheManager {
         var lr = iLikeQuery.execute().all();
         return lr.stream().map(v -> (Integer) v.getKey()).collect(Collectors.toList());
     }
+
 
 }

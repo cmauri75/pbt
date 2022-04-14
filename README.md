@@ -37,5 +37,5 @@ Docker should be installed for test containers
 * ehcache: example usage of ehcache as fast-inmemory full text replacement
 * MathCalculatorTest: two cases, one is complete so PIT shows 100% coverage, second one only 50% as it effectively is
 ## Usage
-```./mvn test``` for all test
-```./mvn test-compile org.pitest:pitest-maven:mutationCoverage``` for PIT testing analisys 
+```./mvnw test``` for all test
+```./mvnw test-compile org.pitest:pitest-maven:mutationCoverage``` for PIT testing analisys 

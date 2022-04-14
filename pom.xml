@@ -155,13 +155,13 @@
                 <version>${pitest.version}</version>
                 <configuration>
                     <mutators>
-                        <mutator>ALL</mutator>
+                        <mutator>STRONGER</mutator>
                     </mutators>
                     <targetClasses>
-                        <param>com.example.pbt.pit.*</param>
+                        <param>com.example.pbt.*</param>
                     </targetClasses>
                     <targetTests>
-                        <param>com.example.pbt.pit.*</param>
+                        <param>com.example.pbt.*</param>
                     </targetTests>
                 </configuration>
                 <dependencies>
