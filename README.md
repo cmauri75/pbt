@@ -39,3 +39,9 @@ Docker should be installed for test containers
 ## Usage
 ```./mvnw test``` for all test
 ```./mvnw test-compile org.pitest:pitest-maven:mutationCoverage``` for PIT testing analisys 
+
+## Exceptions
+![Exception hierarchy ](img/exceptions.png?raw=true "Test types")
+
+* Propagator: Unchecked exceptions are forwarded in calling chain and checked exceptions are not forwarded in calling chain (use throws to do it)
+* Finally: always executed except if program exits
