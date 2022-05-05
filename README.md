@@ -8,6 +8,7 @@
 * ehcache4Search (Original idea to solve UC crypt performance problem)
 * Mutation testing aka PIT testing (Thanks to Decathlon IT)
 * MicroBenchmarking. (Thanks to [Richard](https://richardstartin.github.io/posts/5-java-mundane-performance-tricks#use-enums-instead-of-constant-strings)) 
+* Visitor.
 
 ![Test types](img/tests.png?raw=true "Test types")
 
@@ -43,7 +44,7 @@ Docker should be installed for test containers
     * XXX: Don’t iterate over Enum.values()
     * EnumMapBenchmark: Use Enum instead of String, it's 3 times faster
     * NB: Use of @BenchmarkMode(Mode.SingleShotTime) avoid huge testing times, but real results are obtained using Average or Throughput Mode 
-
+* BadManager: look at implementation to notify when visitor should be used
 
   
 ## Usage
