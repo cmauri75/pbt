@@ -7,6 +7,7 @@
 * System.Logger (Thanks to Baeldung)
 * ehcache4Search (Original idea to solve UC crypt performance problem)
 * Mutation testing aka PIT testing (Thanks to Decathlon IT)
+* MicroBenchmarking. (Thanks to [Richard](https://richardstartin.github.io/posts/5-java-mundane-performance-tricks#use-enums-instead-of-constant-strings)) 
 
 ![Test types](img/tests.png?raw=true "Test types")
 
@@ -31,11 +32,20 @@ PIT docs: [Real world mutation testing](https://pitest.org/)
 ## Prerequisites:
 Docker should be installed for test containers
 
-## Code
-* RedisBackedCacheIntTest.java contains a test against a redis server, loaded by docker at test-time
+## Code explaining
+* RedisBackedCacheIntTest.java contains a test against a redis server, loaded by Docker at test-time
 * Logger: example usage of System.LOGGER, can be used as is, if falls over found log system (like slf4j) or create your own logger, like in this example. Just add META-INF/services/ file indicating finder implementation
 * ehcache: example usage of ehcache as fast-inmemory full text replacement
 * MathCalculatorTest: two cases, one is complete so PIT shows 100% coverage, second one only 50% as it effectively is
+* Benchmark: let's bench hashmaps:
+    * HashMapResize: always leave 0,75 load factor (rounded to upper 2 power) or resize will occur making much slower 
+    * CompositeLookup: when key is composite use a wrapper (4ex using Pair) instead of concatenating string, it's 3 times faster
+    * XXX: Don’t iterate over Enum.values()
+    * EnumMapBenchmark: Use Enum instead of String, it's 3 times faster
+    * NB: Use of @BenchmarkMode(Mode.SingleShotTime) avoid huge testing times, but real results are obtained using Average or Throughput Mode 
+
+
+  
 ## Usage
 ```./mvnw test``` for all test
 ```./mvnw test-compile org.pitest:pitest-maven:mutationCoverage``` for PIT testing analisys 
