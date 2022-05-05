@@ -1,7 +1,7 @@
-package com.example.pbt.visitor.designSupport;
+package com.example.pbt.designpattern.visitor.designsupport;
 
-import com.example.pbt.visitor.support.Professor;
-import com.example.pbt.visitor.support.Student;
+import com.example.pbt.designpattern.visitor.support.Professor;
+import com.example.pbt.designpattern.visitor.support.Student;
 
 public class ResearchStrategy implements ValutateVisitor{
 

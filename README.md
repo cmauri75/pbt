@@ -8,7 +8,9 @@
 * ehcache4Search (Original idea to solve UC crypt performance problem)
 * Mutation testing aka PIT testing (Thanks to Decathlon IT)
 * MicroBenchmarking. (Thanks to [Richard](https://richardstartin.github.io/posts/5-java-mundane-performance-tricks#use-enums-instead-of-constant-strings)) 
-* Visitor.
+* Design patterns examples:
+    * Visitor
+    * Strategy
 
 ![Test types](img/tests.png?raw=true "Test types")
 

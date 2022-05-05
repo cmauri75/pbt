@@ -1,6 +1,6 @@
-package com.example.pbt.visitor.support;
+package com.example.pbt.designpattern.visitor.support;
 
-import com.example.pbt.visitor.designSupport.ValutateVisitor;
+import com.example.pbt.designpattern.visitor.designsupport.ValutateVisitor;
 import lombok.Data;
 
 @Data

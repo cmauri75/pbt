@@ -1,8 +1,8 @@
-package com.example.pbt.visitor;
+package com.example.pbt.designpattern.visitor;
 
-import com.example.pbt.visitor.support.Person;
-import com.example.pbt.visitor.support.Professor;
-import com.example.pbt.visitor.support.Student;
+import com.example.pbt.designpattern.visitor.support.Person;
+import com.example.pbt.designpattern.visitor.support.Professor;
+import com.example.pbt.designpattern.visitor.support.Student;
 
 public class BadManager {
     public enum ValutationPolicy {RESEARCH, ACADEMIC, HYBRID}
